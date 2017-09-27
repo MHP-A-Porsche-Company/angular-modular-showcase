@@ -1,0 +1,27 @@
+{
+  "name": "@mhp/ams",
+  "version": "0.0.0",
+  "description": "A simple showcase how a modular angular project can be built.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run install:main && npm run install:module-a && npm run install:module-b",
+    "install:main": "cd packages/node_modules/@mhp/ams-main && npm i",
+    "install:module-a": "cd packages/node_modules/@mhp/ams-module-a && npm i",
+    "install:module-b": "cd packages/node_modules/@mhp/ams-module-b && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MHP-A-Porsche-Company/angular-modular-showcase.git"
+  },
+  "keywords": [
+    "angular",
+    "showcase",
+    "mhp"
+  ],
+  "author": "Christian Senk <christian.senk@mhp.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MHP-A-Porsche-Company/angular-modular-showcase/issues"
+  },
+  "homepage": "https://github.com/MHP-A-Porsche-Company/angular-modular-showcase#readme"
+}
